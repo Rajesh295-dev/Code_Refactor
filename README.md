@@ -35,8 +35,8 @@ For the conveninet, and best visual experinece, it has made simple, full-respons
 
 ## Links :
 
-* Link for the deployed application [Code Refactor](https://rajesh295-dev.github.io/Code-Refactor/)
-* Link for the Github repository [Host by Github](https://github.com/Rajesh295-dev/Code-Refactor/tree/main)
+* Link for the deployed application [Code Refactor](https://rajesh295-dev.github.io/Code_Refactor/)
+* Link for the Github repository [Host by Github](https://github.com/Rajesh295-dev/Code_Refactor)
 
 
 

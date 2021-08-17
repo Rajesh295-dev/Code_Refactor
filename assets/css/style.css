@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+body {
+    background-color: #d9dcd6;
+
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*.....Header......*/
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 35px 70px;
+    align-items: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li a {
+    padding: 5px;
+    color: #fff;
+    margin: 20px;
+}
+
+header nav ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background-color:rgba(0,36,82,255);
+    transition: 0.5s;
+}
+
+
+header nav ul li :hover::after  {
+    width: 100%;
+}
+
+
+
+h1 a{
+    color: #fff;
+}
+
+
+
+/*.....Header-End......*/
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    padding:33.44%;
+    width:100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: contain;
+    background-position: center;
+}
+
+
+section{
+    justify-content: space-between;
+}
+
+main{
+    flex-direction: column;
+}
+
+.content {
+    width: 75% ;
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+
+
+
+.main-contents .topic-name {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+
+
+#content-image {
+    max-height: 200px;
+} 
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+    flex: 2 70%;
+    flex-wrap: wrap;
+}
+
+.main-contents  .benefits-title{
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+#side-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+    
+}
+
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+    
+.footer {
+    padding: 30px;
+    width: 100%;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.footer h2 {
+    font-size: 20px;
+}
+
+/*** MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER ***/
+/* this will be applied on any screen smaller than 1100px */
+
+
+@media screen and (min-width: 1100px){
+    
+
+    .main-contents .topic-name{
+
+        height:300px;
+        
+    }
+    
+    
+    
+}
+
+/* this will be applied on any screen smaller than 980px which fix the sections after this breakpoint */
+
+@media screen and (max-width: 980px) {
+
+    .header {
+        padding: 20px;
+        
+    }
+    
+    nav{
+        flex-direction: column;
+    }
+
+    
+    header nav ul {
+        margin: 20px 0;
+        width: 100%;
+        justify-content: center;
+        
+    }
+}
+
+/* this will be applied on any screen smaller than 810px to fix sections after this break points */
+
+@media screen and (max-width: 810px){
+
+    header{
+        width:auto;
+        overflow-x: hidden;
+        margin-left: 10px;
+    }
+
+    .hero{
+        margin-left: 10px;
+        width: 100%;
+    }
+    
+
+    .content{
+        width: 100%;
+        height: 600px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .benefits{
+        width: 100% ;
+        display: inline-block;
+        height: auto;
+        float: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 70px;
+        
+    } 
+    
+}
+
+/*** MEDIA QUERY FOR TABLETS AND SMALLER ***/
+/* this will be applied on any screen between 768px and 575px */
+@media screen and (max-width: 768px) {
+    
+    header {
+        justify-content: center;
+        position: relative;
+        width: 101%;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-contents {
+        flex: 1 100%;
+        justify-content: center;
+    }
+
+    .main-contents h2 {
+        
+       
+        margin-bottom: 15px;
+    }
+}
+
+/*** MEDIA QUERY FOR MOBILE PHONES AND SMALLER ***/
+/* this will be applied on any screen smaller than 575px */
+@media screen and (max-width: 575px) {
+
+    header{
+        width:100%;
+        margin-left: 20px;
+    }
+
+    .hero{
+        margin-left: 20px;
+    }
+   
+    .footer{
+        
+        margin-left: 20px;
+        width: 100%;
+        
+    }
+
+    .content {
+        width: 100% ;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+
+    .benefits{
+
+        width: 100% ;
+        display: inline-block;
+        height: auto;
+        float: none;
+        margin-left: 20px;
+        
+    }
+
+    #content-image {
+        width: 100%;
+    } 
+    
+    #side-image {
+        width: 100%;
+        
+    }
+    
+
+    header h1{
+        font-size: 1rem;
+    }
+
+    header nav ul li a {
+        margin: 10px;
+    }
+
+    
+    .contact ul li a {
+        margin: 0 10px;
+    }
+}
+
+/* this will be applied on any screen smaller than 375px */
+@media screen and (max-width: 375px) {
+
+    header h1{
+        font-size: 1rem;
+    }
+
+    header nav ul li a {
+        margin:1px ;
+        font-size: 12px;
+        width: auto;
+
+        
+    }
+
+
+}
+
+
+
+
+
